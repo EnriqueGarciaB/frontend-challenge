@@ -43,16 +43,16 @@ export default function DirectoryList({ offerList, ...props }) {
                         <OffersTable offers={data} />
                         <div class="paginationContainer">
                             <ReactPaginate
-                                previousLabel={"← Previous"}
-                                nextLabel={"Next →"}
-                                breakLabel={"..."}
+                                previousLabel="← Previous"
+                                nextLabel="Next →"
+                                breakLabel="..."
                                 pageCount={data.pages}
                                 marginPagesDisplayed={3}
                                 pageRangeDisplayed={2}
                                 onPageChange={handlePageClick}
-                                containerClassName={"pagination"}
-                                subContainerClassName={"pages pagination"}
-                                activeClassName={"active"}
+                                containerClassName="pagination"
+                                subContainerClassName="pages pagination"
+                                activeClassName="active"
                             />
                         </div>
                     </>
