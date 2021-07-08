@@ -1,1 +1,75 @@
 // This is a sample stylesheet, if you're going to use it don't forget to import it.
+
+.mainTable {
+    margin: 5px;
+    font-size: 15px;
+    font-family: sans-serif;
+    min-width: 90%;
+}
+
+.mainTable thead tr {
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+}
+
+.mainTable th,
+.mainTable td {
+    padding: 10px;
+}
+
+.mainTable tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.tableContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+li a:hover {
+    background-color: #868585;
+}
+
+.pagination > .active > a {
+    background-color: #ffffff;
+    border-color: #000;
+    color: #000;
+    outline: none;
+}
+
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: auto;
+}

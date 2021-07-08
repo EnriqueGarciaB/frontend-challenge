@@ -1,15 +1,14 @@
-import DirectoryList from "ui/components/DirectoryList";
+import DirectoryList from "./ui/components/DirectoryList";
+import { GETALLOFFERS } from "./api";
 
-const fetchOffersList = () => {
-    return [];
+const fetchOffersList = async page => {
+    return await GETALLOFFERS(page);
 };
 
 export default function App() {
     return (
         <>
-            <p class="py-4 text-lg text-center">Start here :) Good luck!</p>
-
-            <DirectoryList offerList={fetchOffersList()} />
+            <DirectoryList offerList={fetchOffersList} />
         </>
     );
 }
